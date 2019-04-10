@@ -4,15 +4,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
   <title>Foodie Quiz</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="newcss.css">
+  <link rel="stylesheet" type="text/css" href="./css/newcss.css">
 <nav class="navbar-collapse bs-navbar bs-navbar-collapse">
     <ul class="form-control">
         <a href="index.html" class="col-sm-2">Home</a>
@@ -24,37 +23,37 @@ and open the template in the editor.
 </head>
 <body>
 
-  
-<div class="container-fluid text-center">    
+
+<div class="container-fluclass text-center">
   <div class="row">
     <div class="col-sm-2">
       <p><a href="foodiequiz.html">Test your awareness</a></p>
       <p><a href="data.html">Food Wastage Data</a></p>
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left">
       <h1>Foodie Quiz</h1>
     </div>
-      
+
   </div>
 </div>
-    
+
     <div class="container">
           <div class="row">
-              <div class="col-xs-6"> 
+              <div class="col-xs-6">
                   <form>
                       <div>
                           <label class="form-inline" for="firstname">First Name</label>
-                      <input type="text" class="form-control" placeholder="Enter first name..." name="firstname">                      
+                      <input type="text" class="form-control" placeholder="Enter first name..." name="firstname">
                       </div>
                       <div>
                           <label class="form-inline" for="lastname">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Enter last name..." name="lastname">                      
+                      <input type="text" class="form-control" placeholder="Enter last name..." name="lastname">
                       </div>
                   </form>
               </div>
           </div>
           <div class="row">
-              <div class="col-xs-6"> 
+              <div class="col-xs-6">
                   <form>
                       <div class="form-group">
                       <label for="age">Your age</label>
@@ -64,7 +63,7 @@ and open the template in the editor.
                             <option value="midage">25-45 years</option>
                             <option value="higher midage">46-65 years</option>
                             <option value="oldage">65+ years</option>
-                      </select>                    
+                      </select>
                       </div>
                       <div class="form-group">
                           <label for="sex">Your gender</label><br>
@@ -75,157 +74,219 @@ and open the template in the editor.
                   </form>
               </div>
           </div>
-<<<<<<< HEAD
         <ul>
         <div class="row">
-              <div class="col-xs-12"> 
-                  <form>
+              <div class="col-xs-12">
+                  <form action="/foodieQuiz.html">
                       <div class="form-group">
-                          <li><label for="q1">How often do you throw away left over food?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q1">Rarely<br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q1">Often <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q1">Moderate <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q1">Very often <br>
+                        <li><label for="q1">How often do you throw away left over food?</label></li>
+                        <input class="col-sm-4" type="radio" value="o1" name="q1" onclick="add(10)"Rarely</input><br>
+                        <input class="col-sm-4" type="radio" value="o2" name="q1" onclick="add(20)">Often </input><br>
+                        <input class="col-sm-4" type="radio" value="o3" name="q1" onclick="add(30)">Moderate </input><br>
+                        <input class="col-sm-4" type="radio" value="o4" name="q1" onclick="add(40)">Very often </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q2">Do you donate the food that's excess in your home?</label></li>             
-                      <input class="col-sm-4" type="radio" value="o1" name="q2">No <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q2">Seldom <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q2">Yes <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q2">Sometimes <br>
+                          <li><label for="q2">Do you donate the food that's excess in your home?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q2" onclick="add(10)">No </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q2" onclick="add(20)">Seldom </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q2" onclick="add(30)">Yes </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q2" onclick="add(40)">Sometimes </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">Do you recycle food waste?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q3">Sometimes <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q3">No <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q3">Yes <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q3">Seldom <br>
+                          <li><label for="q1">Do you recycle food waste?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q3c" onclick="add(10)">Sometimes </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q3" onclick="add(20)">No </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q3" onclick="add(30)">Yes </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q3" onclick="add(40)">Seldom </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">Do you put objects like tea bags, meat, egg shells, etc. in the caddy?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q4">Yes <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q4">Sometimes <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q4">Seldom <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q4">Never <br>
+                          <li><label for="q1">Do you put objects like tea bags, meat, egg shells, etc. in the caddy?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q4" onclick="add(10)">Yes </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q4" onclick="add(20)">Sometimes </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q4" onclick="add(30)">Seldom </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q4" onclick="add(40)">Never </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">Will you prefer to throw away rotten fruits and veggies or turn it into manure?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q5">Turn it into manure <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q5">Seldom, think about it <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q5">Will try to do so from now on <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q5">Never <br>
+                          <li><label for="q1">Will you prefer to throw away rotten fruits and veggies or turn it into manure?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q5" onclick="add(10)">Turn it into manure </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q5" onclick="add(20)">Seldom, think about it </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q5" onclick="add(30)">Will try to do so from now on </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q5" onclick="add(40)">Never </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">Do you throw away the scraps and skins of the veggies and fruits which you can consume?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q6">No <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q6">Sometimes <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q6">Seldom <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q6">Yes <br>
+                          <li><label for="q1">Do you throw away the scraps and skins of the veggies and fruits which you can consume?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q6" onclick="add(10)">No </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q6" onclick="add(20)">Sometimes </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q6" onclick="add(30)">Seldom </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q6" onclick="add(40)">Yes </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
           <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">How often do you buy food products?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q7">Daily <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q7">Every alternate day <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q7">Weekly <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q7">Fortnightly <br>
-                      </div>
-                  </form>
-              </div>
-          </div>  
-            
-            <div class="row">
-              <div class="col-xs-12"> 
-                  <form>
-                      <div class="form-group">
-                          <li><label for="q1">How much of the food you consume is organic and not processed?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q8">25% <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q8">50% <br>
-                       <input class="col-sm-4" type="radio" value="o3" name="q8">75%<br>                      
-                       <input class="col-sm-4" type="radio" value="o4" name="q8">100%<br>
+                          <li><label for="q1">How often do you buy food products?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q7" onclick="add(10)">Daily </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q7" onclick="add(20)">Every alternate day </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q7" onclick="add(30)">Weekly </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q7" onclick="add(40)">Fortnightly </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">How much flour do you buy or need per week?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q9">800 grams to 1kg <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q9">1 kg to 1.5 kg <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q9">1.5 kg to 2 kg <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q9">Above 2 kg <br>
+                          <li><label for="q1">How much of the food you consume is organic and not processed?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q8" onclick="add(10)">25% </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q8" onclick="add(20)">50% </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q8" onclick="add(30)">75%</input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q8" onclick="add(40)">100%</input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
             <div class="row">
-              <div class="col-xs-12"> 
+              <div class="col-xs-12">
                   <form>
                       <div class="form-group">
-                          <li><label for="q1">How often do you waste food at social gatherings?</label></li>             
-                          <input class="col-sm-4" type="radio" value="o1" name="q10">Very often <br>
-                      <input class="col-sm-4" type="radio" value="o2" name="q10">Moderate <br>
-                      <input class="col-sm-4" type="radio" value="o3" name="q10">Sometimes <br>                      
-                      <input class="col-sm-4" type="radio" value="o4" name="q10">Rarely <br>
+                          <li><label for="q1">How much flour do you buy or need per week?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q9" onclick="add(10)">800 grams to 1kg </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q9" onclick="add(20)">1 kg to 1.5 kg </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q9" onclick="add(30)">1.5 kg to 2 kg </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q9" onclick="add(40)">Above 2 kg </input><br>
                       </div>
                   </form>
               </div>
           </div>
-            
+
+            <div class="row">
+              <div class="col-xs-12">
+                  <form>
+                      <div class="form-group">
+                          <li><label for="q1">How often do you waste food at social gatherings?</label></li>
+                          <input class="col-sm-4" type="radio" value="o1" name="q10" onclick="add(10)">Very often </input><br>
+                          <input class="col-sm-4" type="radio" value="o2" name="q10" onclick="add(20)">Moderate </input><br>
+                          <input class="col-sm-4" type="radio" value="o3" name="q10" onclick="add(30)">Sometimes </input><br>
+                          <input class="col-sm-4" type="radio" value="o4" name="q10" onclick="add(40)">Rarely </input><br>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="submitBtn">Submit</button>
+
+          <!-- The Modal -->
+          <div class="modal" id="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div id="modalBody"> test </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" id="close">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </ul>
-=======
-         
->>>>>>> 7c26fa27544f52b4275340b8e9db3a61fb03b552
       </div>
 
-<footer class="container-fluid text-center">
-</footer>
+<!-- <footer class="container-fluclass text-center">
+</footer> -->
+
+<script>
+
+var submitBtn = document.getElementById("submitBtn");
+var modal = document.getElementById("modal");
+var count = 0;
+var modalBody = document.getElementById("modalBody");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+function add(x) {
+  count = count + x;
+  console.log(count);
+}
+
+window.onload = function(){
+  modal.style.display = "none";
+}
+
+submitBtn.onclick = function(){
+  modal.style.display = "block";
+  if(count <= 30){
+    modalBody.innerHTML = 'Yayy you already live a sustainable lifestyle regarding food';
+  }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+    }
+
+</script>
 
 </body>
 </html>
-
