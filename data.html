@@ -1,0 +1,86 @@
+<! DOCTYPE html>
+<html>
+<head>
+
+  <script type="text/javascript">
+      window.onload = function () {
+      	var chart = new CanvasJS.Chart("chartContainer",
+      	{
+      		title:{
+      			text: "Gaming Consoles Sold in 2012"
+      		},
+      		legend: {
+      			maxWidth: 350,
+      			itemWidth: 120
+      		},
+      		data: [
+      		{
+      			type: "pie",
+      			showInLegend: true,
+      			legendText: "{indexLabel}",
+      			dataPoints: [
+      				{ y: 4181563, indexLabel: "PlayStation 3" },
+      				{ y: 2175498, indexLabel: "Wii" },
+      				{ y: 3125844, indexLabel: "Xbox 360" },
+      				{ y: 1176121, indexLabel: "Nintendo DS"},
+      				{ y: 1727161, indexLabel: "PSP" },
+      				{ y: 4303364, indexLabel: "Nintendo 3DS"},
+      				{ y: 1717786, indexLabel: "PS Vita"}
+      			]
+      		}
+      		]
+      	});
+      	chart.render();
+      }
+    </script>
+
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="everything">
+    <div class="center">
+      <div class="number"><font>40%</font></div>
+      of food is wasted in India <a class="a" href="https://thecsrjournal.in/food-wastage-in-india-a-serious-concern/"><sup>(1)</sup></a>
+      The food that is world wide wasted weighs as much as <div class="number">226 Great Pyramids</div>
+      2) Food wasted per year in Europe and Usa an be used to feed the enire world 3 times over
+      3)The food which is mainly waste belongs to the category of fuits, vegetables, roots and tubers
+      3)The fod wasted in the world every year could be used tofeed 2 billion people
+      4)Consumers in richer countries waste almost as much food as is produced in Sub-saharan Africa.
+      5)A ton of food waste saved can save 4.2 tons of CO<sub>2</sub>
+
+        </div>
+  </div>
+
+  <style>
+    .center{
+      margin-right: 35%;
+      margin-left:35%;
+      width: 30%;
+      margin-top: 10%;
+      text-align: center;
+    }
+
+    body{
+      background-color: #0777c6;
+    }
+
+  </style>
+
+</body>
+
+</html>
