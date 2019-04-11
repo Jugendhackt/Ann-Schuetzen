@@ -12,79 +12,68 @@ and open the template in the editor.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/newcss.css">
-<nav class="navbar-collapse navbar navbar-dark bg-dark bs-navbar bs-navbar-collapse">
-  <ul>
-      <a href="index.html" class="col-sm-2"><font face = "TREBUCHET MS"><style="font-size:40;">Home</style></FONT></a>
-      <a href="index.html" class="col-sm-2"><font face = "TREBUCHET MS"><style="font-size:40;">Projects</style></FONT></a>
-      <a href="index.html" class="col-sm-2"><font face = "TREBUCHET MS"><style="font-size:40;">About</style></FONT></a>
-      <a href="index.html" class="col-sm-2"><font face = "TREBUCHET MS"><style="font-size:40;">Contact</style></FONT></a>
-  </ul>
-</nav>
+<nav class="navbar-collapse bs-navbar bs-navbar-collapse">
+        <ul class="form-control">
+            <a href="index.html" class="col-sm-2">Home</a>
+            <a href="foodiequiz.html" class="col-sm-2">Test Your Awareness</a>
+            <a href="tips.html" class="col-sm-2">Tips & Tricks</a>
+            <a href="index.html" class="col-sm-2">Contact</a>
+        </ul>
+    </nav>
 </head>
 <body style="background-color:Aquamarine;">
-  <h1><b> Foodie Quiz </b></h1>
+    <h1 class="text-center"><b> Foodie Quiz </b></h1>
 
-
-  <div class="container-fluid text-center">
-    <div class="row">
-      <div class="col-sm-2 sidenav">
-        <p><a href="FoodieQuiz.html"><h4><font face = "Candara">Test your awareness</FONT></h4></a></p>
-        <p><a href="#"><h4><font face = "Candara">Food Wastage Data</FONT></h4></a></p>
-        <p><a href="#"><h4>Link</h4></a></p>
-      </div>
-      <div class="col-sm-8 text-left">
-
-  </div>
-</div>
 <p>
 
     <div class="container">
           <div class="row">
-              <div class="col-xs-6">
+              <div class="text-center">
                   <form>
                       <div>
-                          <label class="form-inline" for="firstname">First Name</label>
-                      <input type="text" class="form-control" placeholder="Enter first name..." name="firstname">
+                          <label class="form-inline" for="firstname"><li><strong>First Name : </strong>
+                                  <input type="text" class="form-control" placeholder="Enter first name..." name="firstname"></li></label>
                       </div>
                       <div>
-                          <label class="form-inline" for="lastname">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Enter last name..." name="lastname">
+                          <label class="form-inline" for="lastname"><li><strong>Last Name : </strong>
+                              <input type="text" class="form-control" placeholder="Enter last name..." name="lastname"></li></label>
                       </div>
                   </form>
               </div>
           </div>
           <div class="row">
-              <div class="col-xs-6">
+              <div class="col-xs-12 text-left">
                   <form>
                       <div class="form-group">
-                      <label for="age">Your age</label>
+                          <label for="age"><li><strong>Your age : </strong>
                       <select name="age">
                             <option value="kids"><13 years</option>
                             <option value="young adults">13-24 years</option>
                             <option value="midage">25-45 years</option>
                             <option value="higher midage">46-65 years</option>
                             <option value="oldage">65+ years</option>
-                      </select>
+                      </select></li></label>
                       </div>
                       <div class="form-group">
-                          <label for="sex">Your gender</label><br>
+                          <label for="sex"><li><strong>Your gender : </strong>
                       Male <input type="radio" value="male" name="sex">
                       Female <input type="radio" value="female" name="sex">
-                      Other <input type="radio" value="other" name="sex">
+                      Other <input type="radio" value="other" name="sex"></li></label>
                       </div>
                   </form>
               </div>
           </div>
+        <div><br><br><br><h4><strong>PLEASE BE HONEST WHILE ANSWERING... No one is going to judge you! ;)</strong></h4></div>
         <ul>
         <div class="row">
-              <div class="col-xs-12">
+              <div class="col-xs-12 text-left">
                   <form action="/foodieQuiz.html">
                       <div class="form-group">
-                        <li><label for="q1">How often do you throw away left over food?</label></li>
-                        <input class="col-sm-4" type="radio" value="o1" name="q1" onclick="add(40)">Rarely</input><br>
-                        <input class="col-sm-4" type="radio" value="o2" name="q1" onclick="add(20)">Often </input><br>
-                        <input class="col-sm-4" type="radio" value="o3" name="q1" onclick="add(30)">Moderate </input><br>
-                        <input class="col-sm-4" type="radio" value="o4" name="q1" onclick="add(10)">Very often </input><br>
+                          <li><label for="q1">How often do you throw away left over food?</label></li>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q1" onclick="add(40)"> Rarely<br>
+                        <input class="col-xs-4" type="radio" value="o2" name="q1" onclick="add(20)"> Often <br>
+                        <input class="col-xs-4" type="radio" value="o3" name="q1" onclick="add(30)"> Moderate <br>
+                        <input class="col-xs-4" type="radio" value="o4" name="q1" onclick="add(10)"> Very often <br></label>                           
                       </div>
                   </form>
               </div>
@@ -95,10 +84,11 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q2">Do you donate the food that's excess in your home?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q2" onclick="add(10)">No </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q2" onclick="add(20)">Seldom </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q2" onclick="add(40)">Yes </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q2" onclick="add(30)">Sometimes </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q2" onclick="add(10)"> No <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q2" onclick="add(20)"> Seldom <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q2" onclick="add(40)"> Yes <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q2" onclick="add(30)"> Sometimes <br>
+                          </label>
                       </div>
                   </form>
               </div>
@@ -109,10 +99,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">Do you recycle food waste?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q3c" onclick="add(30)">Sometimes </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q3" onclick="add(10)">No </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q3" onclick="add(40)">Yes </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q3" onclick="add(20)">Seldom </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q3c" onclick="add(30)"> Sometimes<br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q3" onclick="add(10)"> No <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q3" onclick="add(40)"> Yes <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q3" onclick="add(20)"> Seldom <br></label>
                       </div>
                   </form>
               </div>
@@ -123,10 +113,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">Do you put objects like tea bags, meat, egg shells, etc. in the caddy?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q4" onclick="add(40)">Yes </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q4" onclick="add(30)">Sometimes </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q4" onclick="add(20)">Seldom </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q4" onclick="add(10)">Never </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q4" onclick="add(40)"> Yes <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q4" onclick="add(30)"> Sometimes <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q4" onclick="add(20)"> Seldom <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q4" onclick="add(10)"> Never <br> </label>
                       </div>
                   </form>
               </div>
@@ -137,10 +127,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">Will you prefer to throw away rotten fruits and veggies or turn it into manure?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q5" onclick="add(40)">Turn it into manure </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q5" onclick="add(20)">Seldom, think about it </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q5" onclick="add(30)">Will try to do so from now on </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q5" onclick="add(10)">Never </input><br>
+                          <input class="col-xs-4" type="radio" value="o1" name="q5" onclick="add(40)"> Turn it into manure <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q5" onclick="add(20)"> Seldom, think about it <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q5" onclick="add(30)"> Will try to do so from now on <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q5" onclick="add(10)"> Never <br></label>
                       </div>
                   </form>
               </div>
@@ -151,10 +141,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">Do you throw away the scraps and skins of the veggies and fruits which you can consume?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q6" onclick="add(40)">No </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q6" onclick="add(30)">Sometimes </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q6" onclick="add(20)">Seldom </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q6" onclick="add(10)">Yes </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q6" onclick="add(40)"> No <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q6" onclick="add(30)"> Sometimes <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q6" onclick="add(20)"> Seldom <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q6" onclick="add(10)"> Yes <br></label>
                       </div>
                   </form>
               </div>
@@ -165,10 +155,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">How often do you buy food products?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q7" onclick="add(10)">Daily </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q7" onclick="add(20)">Every alternate day </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q7" onclick="add(30)">Weekly </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q7" onclick="add(40)">Fortnightly </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q7" onclick="add(10)"> Daily <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q7" onclick="add(20)"> Every alternate day <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q7" onclick="add(30)"> Weekly <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q7" onclick="add(40)"> Fortnightly <br></label>
                       </div>
                   </form>
               </div>
@@ -179,10 +169,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">How much of the food you consume is organic and not processed?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q8" onclick="add(10)">25% </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q8" onclick="add(20)">50% </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q8" onclick="add(30)">75%</input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q8" onclick="add(40)">100%</input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q8" onclick="add(10)"> 25% <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q8" onclick="add(20)"> 50% <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q8" onclick="add(30)"> 75%<br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q8" onclick="add(40)"> 100%<br></label>
                       </div>
                   </form>
               </div>
@@ -193,10 +183,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">How much flour do you buy or need per week?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q9" onclick="add(30)">800 grams to 1kg </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q9" onclick="add(40)">1 kg to 1.5 kg </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q9" onclick="add(20)">1.5 kg to 2 kg </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q9" onclick="add(10)">Above 2 kg </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q9" onclick="add(30)"> 800 grams to 1kg <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q9" onclick="add(40)"> 1 kg to 1.5 kg <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q9" onclick="add(20)"> 1.5 kg to 2 kg <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q9" onclick="add(10)"> Above 2 kg <br></label>
                       </div>
                   </form>
               </div>
@@ -207,10 +197,10 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">How often do you waste food at social gatherings?</label></li>
-                          <input class="col-sm-4" type="radio" value="o1" name="q10" onclick="add(10)">Very often </input><br>
-                          <input class="col-sm-4" type="radio" value="o2" name="q10" onclick="add(20)">Moderate </input><br>
-                          <input class="col-sm-4" type="radio" value="o3" name="q10" onclick="add(30)">Sometimes </input><br>
-                          <input class="col-sm-4" type="radio" value="o4" name="q10" onclick="add(40)">Rarely </input><br>
+                          <label><input class="col-xs-4" type="radio" value="o1" name="q10" onclick="add(10)"> Very often <br>
+                          <input class="col-xs-4" type="radio" value="o2" name="q10" onclick="add(20)"> Moderate <br>
+                          <input class="col-xs-4" type="radio" value="o3" name="q10" onclick="add(30)"> Sometimes <br>
+                          <input class="col-xs-4" type="radio" value="o4" name="q10" onclick="add(40)"> Rarely <br></label>
                       </div>
                   </form>
               </div>
