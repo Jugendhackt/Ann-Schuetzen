@@ -14,10 +14,11 @@ and open the template in the editor.
   <link rel="stylesheet" type="text/css" href="./css/newcss.css">
 <nav class="navbar-collapse bs-navbar bs-navbar-collapse">
         <ul class="form-control">
+            <a href="index.html" class="col-sm-2"><img alt="Ann-Schutzen" height="35px" width="25px" src="img/logo.png"</a>
             <a href="index.html" class="col-sm-2">Home</a>
             <a href="foodiequiz.html" class="col-sm-2">Test Your Awareness</a>
             <a href="tips.html" class="col-sm-2">Tips & Tricks</a>
-            <a href="index.html" class="col-sm-2">Contact</a>
+            <a href="contact.html" class="col-sm-2">Contact</a>
         </ul>
     </nav>
 </head>
@@ -100,7 +101,7 @@ and open the template in the editor.
                   <form>
                       <div class="form-group">
                           <li><label for="q1">Do you recycle food waste?</label></li>
-                          <label><input class="col-xs-4" type="radio" value="o1" name="q3c" onclick="add(30)"> Sometimes<br>
+                          <label><input class="col-xs-4" type="radio" checked value="o1" name="q3c" onclick="add(30)"> Sometimes<br>
                           <input class="col-xs-4" type="radio" value="o2" name="q3" onclick="add(10)"> No <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q3" onclick="add(40)"> Yes <br>
                           <input class="col-xs-4" type="radio" value="o4" name="q3" onclick="add(20)"> Seldom <br></label>
@@ -115,7 +116,7 @@ and open the template in the editor.
                       <div class="form-group">
                           <li><label for="q1">Do you put objects like tea bags, meat, egg shells, etc. in the caddy?</label></li>
                           <label><input class="col-xs-4" type="radio" value="o1" name="q4" onclick="add(40)"> Yes <br>
-                          <input class="col-xs-4" type="radio" value="o2" name="q4" onclick="add(30)"> Sometimes <br>
+                          <input class="col-xs-4" type="radio" checked value="o2" name="q4" onclick="add(30)"> Sometimes <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q4" onclick="add(20)"> Seldom <br>
                           <input class="col-xs-4" type="radio" value="o4" name="q4" onclick="add(10)"> Never <br> </label>
                       </div>
@@ -129,7 +130,7 @@ and open the template in the editor.
                       <div class="form-group">
                           <li><label for="q1">Will you prefer to throw away rotten fruits and veggies or turn it into manure?</label></li>
                           <input class="col-xs-4" type="radio" value="o1" name="q5" onclick="add(40)"> Turn it into manure <br>
-                          <input class="col-xs-4" type="radio" value="o2" name="q5" onclick="add(20)"> Seldom, think about it <br>
+                          <input class="col-xs-4" type="radio" checked value="o2" name="q5" onclick="add(20)"> Seldom, think about it <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q5" onclick="add(30)"> Will try to do so from now on <br>
                           <input class="col-xs-4" type="radio" value="o4" name="q5" onclick="add(10)"> Never <br></label>
                       </div>
@@ -157,7 +158,7 @@ and open the template in the editor.
                       <div class="form-group">
                           <li><label for="q1">How often do you buy food products?</label></li>
                           <label><input class="col-xs-4" type="radio" value="o1" name="q7" onclick="add(10)"> Daily <br>
-                          <input class="col-xs-4" type="radio" value="o2" name="q7" onclick="add(20)"> Every alternate day <br>
+                          <input class="col-xs-4" type="radio" checked value="o2" name="q7" onclick="add(20)"> Every alternate day <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q7" onclick="add(30)"> Weekly <br>
                           <input class="col-xs-4" type="radio" value="o4" name="q7" onclick="add(40)"> Fortnightly <br></label>
                       </div>
@@ -171,7 +172,7 @@ and open the template in the editor.
                       <div class="form-group">
                           <li><label for="q1">How much of the food you consume is organic and not processed?</label></li>
                           <label><input class="col-xs-4" type="radio" value="o1" name="q8" onclick="add(10)"> 25% <br>
-                          <input class="col-xs-4" type="radio" value="o2" name="q8" onclick="add(20)"> 50% <br>
+                          <input class="col-xs-4" type="radio" checked value="o2" name="q8" onclick="add(20)"> 50% <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q8" onclick="add(30)"> 75%<br>
                           <input class="col-xs-4" type="radio" value="o4" name="q8" onclick="add(40)"> 100%<br></label>
                       </div>
@@ -185,7 +186,7 @@ and open the template in the editor.
                       <div class="form-group">
                           <li><label for="q1">How much flour do you buy or need per week?</label></li>
                           <label><input class="col-xs-4" type="radio" value="o1" name="q9" onclick="add(30)"> 800 grams to 1kg <br>
-                          <input class="col-xs-4" type="radio" value="o2" name="q9" onclick="add(40)"> 1 kg to 1.5 kg <br>
+                          <input class="col-xs-4" type="radio" checked value="o2" name="q9" onclick="add(40)"> 1 kg to 1.5 kg <br>
                           <input class="col-xs-4" type="radio" value="o3" name="q9" onclick="add(20)"> 1.5 kg to 2 kg <br>
                           <input class="col-xs-4" type="radio" value="o4" name="q9" onclick="add(10)"> Above 2 kg <br></label>
                       </div>
@@ -222,7 +223,7 @@ and open the template in the editor.
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                  <div id="modalBody"> test </div>
+                  <div id="modalBody"> Please select the options. </div>
                 </div>
 
                 <!-- Modal footer -->
@@ -261,14 +262,14 @@ window.onload = function(){
 
 submitBtn.onclick = function(){
   modal.style.display = "block";
-  if(count >= 100 && count <200){
+  if(count >= 10 && count <200){
     modalBody.innerHTML = 'You should be more concerned about the consummption of food required by you and not utilise excess of it so that it does not get wasted';
   }
   else if(count >= 200 && count <300){
     modalBody.innerHTML = 'You are quite considerable about the consumption of food and are aware of your needs but you should set a limit to the abundance that is wasted by you';
   }
   else if(count >= 300){
-    modalBody.innerHTML = 'You are a epitome of sustainability for mankind. Keep up the good work';
+    modalBody.innerHTML = 'You are an epitome of sustainability for mankind. Keep up the good work';
   }
 };
 
