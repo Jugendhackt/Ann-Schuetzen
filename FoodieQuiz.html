@@ -14,23 +14,23 @@ and open the template in the editor.
   <link rel="stylesheet" type="text/css" href="./css/newcss.css">
 <nav class="navbar-collapse bs-navbar bs-navbar-collapse">
         <ul class="form-control">
-            <a href="index.html" class="col-sm-2"><img alt="Ann-Schutzen" height="35px" width="25px" src="img/logo.png"</a>
-            <a href="index.html" class="col-sm-2">Home</a>
+            <div style="float: left"><a href="index.html" class="col-sm-2"><img alt="Ann-Schutzen" height="35px" width="25px" src="img/logo.png"><strong>अन्न - Schützen [Ann-Schützen]</strong></a></div>
+            <div style="float: right"><a href="data.html" class="col-sm-2">Data</a>
             <a href="foodiequiz.html" class="col-sm-2">Test Your Awareness</a>
             <a href="tips.html" class="col-sm-2">Tips & Tricks</a>
-            <a href="contact.html" class="col-sm-2">Contact</a>
+            <a href="contact.html" class="col-sm-2">Contact</a></div>
         </ul>
     </nav>
 </head>
 <body style="background-color:#bff2e9;">
-<div center>  <h1><b> Foodie Quiz </b></h1> </div>
+<div class="text-center">  <h1><b> Foodie Quiz </b></h1> </div>
 
 
 <p>
 
     <div class="container">
           <div class="row">
-              <div class="text-center">
+              <div class="col-xs-12 text-left">
                   <form>
                       <div>
                           <label class="form-inline" for="firstname"><li><strong>First Name : </strong>
@@ -208,7 +208,7 @@ and open the template in the editor.
               </div>
           </div>
 
-          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="submitBtn">Submit</button>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal" id="submitBtn">Submit</button>
 
           <!-- The Modal -->
           <div class="modal" id="modal">
@@ -217,7 +217,7 @@ and open the template in the editor.
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                  <h4 class="modal-title">Modal Heading</h4>
+                  <h4 class="modal-title">Form Submission</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -239,8 +239,9 @@ and open the template in the editor.
       </div>
     </p>
 
-<!-- <footer class="container-fluclass text-center">
-</footer> -->
+    <footer class="container-fluclass text-center form-control" style="background-color: #6666ff">
+        <p style="color: #ffffff">* Ps.: Quiz preset answers were selected on the basis of manual surveys and case studies. *</p>
+</footer>
 
 <script>
 
@@ -250,6 +251,7 @@ var count = 0;
 var modalBody = document.getElementById("modalBody");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("btn btn-danger")[0];
 
 function add(x) {
   count = count + x;
@@ -278,6 +280,9 @@ span.onclick = function() {
 modal.style.display = "none";
 };
 
+span1.onclick = function() {
+modal.style.display = "none";
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
