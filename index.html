@@ -1,37 +1,66 @@
 <! DOCTYPE html>
 <html  class="no-js">
 <head>
+  <title>Anna-Schutzen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="newcss.css">
+</head>
+<body>
+
+  <nav class="navbar-collapse bs-navbar bs-navbar-collapse">
+      <ul class="form-control">
+          <a href="index.html" class="col-sm-2">Home</a>
+          <a href="foodiequiz.html" class="col-sm-2">Test Your Awareness</a>
+          <a href="tips.html" class="col-sm-2">Tips & Tricks</a>
+          <a href="index.html" class="col-sm-2">Contact</a>
+      </ul>
+  </nav>
+  <div style="margin-left: 5%; margin-right: 5%;"
+
+  <h1> Practising अन्न Schützen </h1>
+    <p>  All the efforts by the government and organizations would not succeed if there is no individual involvement. </p>
+
+    <p>  1.Ask for smaller portions
+           Make sure you start your meals with a small portion on your plate. You can always go back for more if you’re still hungry.</p>
+
+    <p>  2. Love your leftovers
+            Instead of scraping leftovers into the bin, use them as ingredients for tomorrow’s meal, or simply reheat them as the same meal again. Remember, if you want to use leftovers, it’s very important to store them in the fridge or freezer within two hours of preparing your meal.</p>
+  <img src="Ann-Schuetzen/img/rf.jpg">
+
+
+    <p>  3. Shop smart
+          We often buy more food than we can eat before it goes off. To avoid over-shopping, try to plan ahead, make a shopping list, and don’t go shopping on an empty stomach!</p>
+</div>
 
   <script type="text/javascript">
-      // window.onload = function () {
-      // 	var chart = new CanvasJS.Chart("chartContainer",
-      // 	{
-      // 		title:{
-      // 			text: "Gaming Consoles Sold in 2012"
-      // 		},
-      // 		legend: {
-      // 			maxWidth: 350,
-      // 			itemWidth: 120
-      // 		},
-      // 		data: [
-      // 		{
-      // 			type: "pie",
-      // 			showInLegend: true,
-      // 			legendText: "{indexLabel}",
-      // 			dataPoints: [
-      // 				{ y: 4181563, indexLabel: "PlayStation 3" },
-      // 				{ y: 2175498, indexLabel: "Wii" },
-      // 				{ y: 3125844, indexLabel: "Xbox 360" },
-      // 				{ y: 1176121, indexLabel: "Nintendo DS"},
-      // 				{ y: 1727161, indexLabel: "PSP" },
-      // 				{ y: 4303364, indexLabel: "Nintendo 3DS"},
-      // 				{ y: 1717786, indexLabel: "PS Vita"}
-      // 			]
-      // 		}
-      // 		]
-      // 	});
-      // 	chart.render();
-      // }
+  window.onload = function () {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      theme: "light2", // "light1", "light2", "dark1", "dark2"
+      title:{
+      text: "Green House Gas Emissions"
+      },
+      axisY: {
+      title: "Co2 euqivalents in Megatons"
+      },
+      data: [{
+      type: "column",
+      showInLegend: true,
+      legendMarkerColor: "",
+      legendText: "",
+      dataPoints: [
+        { y: 12454,  label: "China" },
+        { y: 6673,  label: "US" },
+        { y: 4400, label: "Food Waste" },
+      ]
+      }]
+      });
+      chart.render();
+
+      }
     </script>
 
 
@@ -53,6 +82,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<<<<<<< HEAD
     <nav class="navbar-collapse bs-navbar bs-navbar-collapse">
         <ul class="form-control">
             <a href="index.html" class="col-sm-2">Home</a>
@@ -62,6 +92,8 @@
         </ul>
     </nav>
 
+=======
+>>>>>>> 47c82990c82cabea7a6a26ce13e57f18e7cfe3ee
 </head>
 
 <body>
@@ -74,7 +106,7 @@
       <div class=row>
         <div class="col" style="text-align: right;">
         <div class="number"><div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='40' data-delay='2' data-increment="2">0</div></div></div><div class="col" class="number" style="text-align: left; font-size: 300%;">%</div></div>
-      of food is wasted in India <a class="a" href="https://thecsrjournal.in/food-wastage-in-india-a-serious-concern/"><sup>(1)</sup></a></br></br>
+      of food is wasted in India <a class="a" href="https://thecsrjournal.in/food-wastage-in-india-a-serious-concern/"><sup>(1)</sup></a></br></br></br>
       The food that is world wide wasted weighs as much as <div class="number"><div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='226' data-delay='2' data-increment="1">0</div> Great Pyramids</div>
       <!-- 2) Food wasted per year in Europe and Usa an be used to feed the enire world 3 times over
       3)The food which is mainly waste belongs to the category of fuits, vegetables, roots and tubers
@@ -82,9 +114,16 @@
       4)Consumers in richer countries waste almost as much food as is produced in Sub-saharan Africa.
       5)A ton of food waste saved can save 4.2 tons of CO<sub>2</sub> -->
     </div>
-      <img src="./img/pyramid.png" alt="pyramid">\
+      <!-- <img src="./img/pyramid.png" alt="pyramid">\ -->
     <div class="center">
-      <p>	Food loss and waste accounts for about 4,4 giga tons of greenhouse gas emissions (GHG) per year. To put this in perspective, if food loss and waste were its own country, it would be the world&#39;s third-largest GHG emitter, surpassed only by China and the United States.</p>
+      <p>	Food loss and waste accounts for about <div class="number"><div class='numscroller numscroller-big-bottom' data-slno='3' data-min='0' data-max='4.4' data-delay='1' data-increment="1">0</div>giga tons </div> of greenhouse gas emissions (GHG) per year.</p> </br>
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div> </br>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    </div>
+        <span class="dot1"> </br></br>Food wastage of </br> rich countries</span>
+        <span class="dot2"> </br></br>net food production </br> of sub-Saharan Africa</span>
+
+    <div class="center">
       <p>	Every year, consumers in rich countries waste almost as much food (222 million tons) as the entire net food production of sub-Saharan Africa (230 million tons).</p>
       <p> According to research, the produced but unconsumed food accounts for approximately 1.4 billion hectares of land, constituting almost <font size="30"> 1/3 of the planet&#39;s agricultural land.</font> The world is wasting 30 percent of the world&#39s;s fertile land which could be used for other meaningful purposes such as environmental research.</p>
       <p>	Precise estimations indicate that food wastage is responsible for the wastage of nearly 250 cubic km of water (per year). This wastage is equivalent to <font size="30"> thrice the volume </font> of Lake Geneva.</p>
@@ -104,6 +143,28 @@
       width: 30%;
       margin-top: 10%;
       text-align: center;
+    }
+
+    .dot1 {
+      height: 230px;
+      width: 230px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      background-color:#6F72B8;
+    }
+
+    .dot2 {
+      height: 222px;
+      width: 222px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #05D3A7;
     }
 
     body{
